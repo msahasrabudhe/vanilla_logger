@@ -10,7 +10,7 @@
 #
 # 1. To plot logged values. 
 #   >>> import vanilla_logger as vl
-#   >>> vl.plot_logs(<file>, <options>)
+#   >>> vl.plot_log(<file>, <options>)
 #
 # 2. To record values at an iteration, 
 #

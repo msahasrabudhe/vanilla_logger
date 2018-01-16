@@ -11,7 +11,7 @@ Logs information in the CSV format, so can be read by other editors.
  1. To plot logged values. 
     ```python
     >>> import vanilla_logger as vl
-    >>> vl.plot_logs(<file>, <options>)
+    >>> vl.plot_log(<file>, <options>)
     ```
 
  2. To record values at an iteration, 
