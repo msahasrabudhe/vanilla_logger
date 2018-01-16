@@ -20,7 +20,7 @@
 #       vl.log_info(<file>, info, iter_mark)
 #
 # Information from several files can be plotted at once 
-#   using matplotlib.pyplot.subplot, and setting show=False
+#   using matplotlib.pyplot.subplot(), and setting show=False
 #   in each call to plot_log(). Finally, 
 #   matplotlib.pyplot.show() should be called. 
 #
