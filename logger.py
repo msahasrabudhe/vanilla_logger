@@ -122,8 +122,8 @@ def plot_log(cfile, v_ids=None, v_names=None, smoothing=5,
     # Plot now. 
     for l in range(n_vals):
         # Get line style based on 
-        lstyle_id = l/n_lstyles
-        mstyle_id = l%n_mstyles
+        lstyle_id = l%n_lstyles
+        mstyle_id = l/n_mstyles
         h, = plt.plot(values[:,l], linestyles[lstyle_id], marker=markers[mstyle_id])
         # Keep the handle. 
         handles.append(h)
