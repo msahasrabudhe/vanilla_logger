@@ -90,10 +90,6 @@ def plot_log(cfile, v_ids=None, v_names=None, smoothing=5,
     # Read the values themselves. 
     values = np.loadtxt(cfile, delimiter=',', skiprows=1)
 
-    # Get the numbers of values and iterations. 
-    n_iters = values.shape[0]
-    n_vals  = values.shape[1]
-
     # If the IDs of values to be logged are specified, choose only those. 
     if v_ids is not None:
         values  = values[:,v_ids]
@@ -103,6 +99,10 @@ def plot_log(cfile, v_ids=None, v_names=None, smoothing=5,
         v_ids   = [i for i in range(n_vals) if heading[i] in v_names]
         values  = values[:,v_ids]
         heading = [heading[i] for i in v_ids]
+
+    # Get the numbers of values and iterations. 
+    n_iters = values.shape[0]
+    n_vals  = values.shape[1]
 
     # We will choose a different style for each plot. 
     n_lstyles = len(linestyles)
